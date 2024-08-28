@@ -8,27 +8,83 @@
 </head>
 <body>
     <nav>
-        <header>
             <div class="logo-icon"></div>
-        </header>
-
-        <section class="nav-container">
-            <a href="#" class="nav-item" >Home</a>
-            <a href="#" class="nav-item" >Our Profiles</a>
-            <a href="#" class="nav-item" >Achievment</a>
-            <a href="#" class="nav-item" >Message Us</a>
-        </section>
+            
+            <section class="nav-container">
+                <a href="#" class="nav-item" >Home</a>
+                <a href="#" class="nav-item" >Our Profile</a>
+                <a href="#" class="nav-item" >Achievment</a>
+                <a href="#" class="nav-item" >Message Us</a>
+            </section>
     </nav>
 
     <hr/>
 
     <main>
+        <article>
+            <header>
+                <h1>Welcome user, to our website </h1>
+            </header>
 
+            <p>Enjoy</p>
+            <div class="banner-img img-1"></div>
+            <div class="banner-img img-2"></div>
+            <div class="banner-img img-3"></div>
+        </article>
+    
+        <hr />
+
+        <section>
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+
+            <section class="profile-container">
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>Software Enginer</h2>
+                </div>
+                
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>Software Enginer</h2>
+                </div>
+                
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>Software Enginer</h2>
+                </div>
+                
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>Software Enginer</h2>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <form>
+                <div>
+                    <label for="name">Name</label><input id="name">
+                </div>
+                    <button type="button" onclick="formValidation()">Submit</button>
+            </form>
+
+            <div>
+                Result: <span id="result"></span>
+            </div>
+
+                    <button type="button" onclick="nextSlide(1)">Next Slide</button>
+
+
+        </section>
     </main>
     
     <footer>
-
+        <p>Made by Fahmi</p>
     </footer>
+
+<script src="js\script.js"></script>
 
 </body>
 </html>
