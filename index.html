@@ -6,85 +6,167 @@
     <title>Document</title>
     <link rel="stylesheet" href="css\styles.css">
 </head>
+
 <body>
     <nav>
+        <div class="logo-container">
             <div class="logo-icon"></div>
-            
-            <section class="nav-container">
-                <a href="#" class="nav-item" >Home</a>
-                <a href="#" class="nav-item" >Our Profile</a>
-                <a href="#" class="nav-item" >Achievment</a>
-                <a href="#" class="nav-item" >Message Us</a>
-            </section>
+            <div class="nama-sekolah">SMAN 1 CIPANAS</div>
+        </div>
+        <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+        <section class="nav-container">
+            <a href="#" class="nav-item">Halaman Utama</a>
+            <a href="#profile" class="nav-item">Profil</a>
+            <a href="#manajemen" class="nav-item">Manajemen</a>
+            <a href="#message" class="nav-item">Pesan</a>
+        </section>
     </nav>
 
-    <hr/>
+    <hr />
 
     <main>
         <article>
             <header>
-                <h1>Welcome user, to our website </h1>
+                <h1>Selamat datang <span id="name">Fahmi</span>, Di Website SMAN 1 CIPANAS</h1>
             </header>
-
-            <p>Enjoy</p>
             <div class="banner-img img-1"></div>
             <div class="banner-img img-2"></div>
             <div class="banner-img img-3"></div>
+            <button type="button" onclick="nextSlide(1)">Next Slide</button>
         </article>
-    
+
         <hr />
 
-        <section>
             <header>
-                <h1>Our Profile</h1>
+                <h1>Profil Sekolah</h1>
             </header>
 
-            <section class="profile-container">
-                <div class="profile-item">
-                    <div class="profile-img"></div>
-                    <h2>Software Enginer</h2>
+            <section class="profile-container" id="profile">
+
+                <div class="profil-singkat">
+                    <h2>Profil Singkat</h2>
+                    <p>SMAN 1 Cipanas berdiri secara definitif pada tanggal 5 Mei 1992. SMAN 1 Cipanas berlokasi di Jalan Raya Muncang No. 44,
+                    Desa Haurgajrug, Kecamatan Cipanas, Kabupaten Lebak, Banten. Berdiri di atas lahan ± 6000 m2, SMAN 1 Cipanas terus
+                    bergerak menjadi sekolah terbaik. Terbukti dengan predikat yang diperolehnya pada tahun 2019 sebagai sekolah unggul dan
+                    terakreditasi A.</p>
+                    
+                    <p>SMAN 1 Cipanas terus berupaya menjadi sekolah yang mewadahi kebutuan para peserta didiknya dengan terus mengembangkan
+                    diri, baik secra infrastruktur, maupun suprastruktur. Meskipun belum sangat memadai, fasilitas belajar dan sarana
+                    penunjang yang lain sudah akomodatif. Tercatat ada 22 ruang kelas, sarana olahraga, sarana ibadah, sarana seni,
+                    laboratorium IPA, laboratorium komputer, kantin, dan lain-lain.</p>
+                    
+                    <p>Saat ini, SMAN 1 Cipanas, di bawah kepemimpinan Bapak H. Apip Radiawan, M.Pd. tercatat sebagai salah satu Sekolah
+                    Penggerak di Kabupaten Lebak, Provinsi Banten, yang juga kaya dengan prestasi, baik akademik, maupun nonakademik.
+                    Sebagai pelaksana Kurikulum Merdeka, visi dan misi SMAN 1 Cipanas pun lebih berpihak pada peserta didik demi mewujudkan
+                    Profil Pelajar Pancasila.</p>
                 </div>
-                
-                <div class="profile-item">
-                    <div class="profile-img"></div>
-                    <h2>Software Enginer</h2>
+
+                <br>
+
+                <div class="visi">
+                    <h2>Visi</h2>
+                    <p>
+                        ” Terbentuknya Insan Religius, Berbudi Pekerti, dan Cakap”
+                    </p>
                 </div>
-                
-                <div class="profile-item">
-                    <div class="profile-img"></div>
-                    <h2>Software Enginer</h2>
+
+                <br>
+
+                <div class="Misi">
+                    <h2>Misi</h2>
+                        <p>Membangun kebiasaan tertib beribadah, kajian keagamaan rutin, dan 5S (Senyum, Sapa, Salam, Santun, dan Sopan) pada
+                        peserta didik.</p>
+                        <p>Mengembangkan rasa kepedulian, nasionalisme, patriotisme, dan bangga atas budaya lokal melalui aktivitas sosial,
+                        lingkungan, kebangsaan, dan eksplorasi.</p>
+                        <p>Membekali peserta didik dengan pengalaman lintas budaya baik nasional maupun internasional</p>
+                        <p>Mengidentifikasi, mengembangkan, dan memfasilitasi pencapaian prestasi minat dan bakat peserta didik.</p>
+                        <p>Mengembangkan dan menerapkan pembelajaran berbasis HOTS dan membangun enam kemampuan literasi dasar (literasi baca
+                        tulis, numerasi, sains, digital, budaya kewarganegaraan, dan finansial) dengan berlandaskan prinsip kejujuran dan
+                        kemandirian dan memperhatikan bakat dan minat pelajar.</p>
+                        <p>Memfasilitasi terlampauinya capaian kompetensi minimal tingkat SMA oleh peserta didik melalui matrikulasi, pemantauan
+                        perkembangan belajar, identifikasi permasalahan belajar, perbaikan, pendampingan, pengembangan, dan kerja sama dengan
+                        orang tua.</p>
+                        <p>Membimbing peserta didik menghasilkan suatu karya ilmiah yang orisinal, dapat dipertanggungjawabkan, dan tepat guna.</p>
                 </div>
-                
+
+                <br>
+            </section>
+
+        <hr/>
+
+        
+            <section id="manajemen">
+                <h2>Manajemen Sekolah</h2>
+                <div class="profile-item-container">
+                    <div class="profile-item">
+                        <div class="profile-img p-img-1" ></div>
+                        <h3>Apip Radiawan M.Pd</h3>
+                        <h4>Kepala Sekolah</h4>
+                </div>
                 <div class="profile-item">
-                    <div class="profile-img"></div>
-                    <h2>Software Enginer</h2>
+                    <div class="profile-img p-img-2"></div>
+                    <h3>Saroh M.Pd</h3>
+                    <h4>Wakasek Kesiswaan</h4>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-img p-img-3"></div>
+                    <h3>Uus Ahmad Sulam Husni M.Pd</h3>
+                    <h4>Wakasek Kurikulum</h4>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-img p-img-4"></div>
+                    <h3>Nurul Khotimah S.Ab</h3>
+                    <h4>Kepala Tata Usaha</h4>
                 </div>
             </section>
-        </section>
 
-        <section>
-            <form>
-                <div>
-                    <label for="name">Name</label><input id="name">
-                </div>
-                    <button type="button" onclick="formValidation()">Submit</button>
-            </form>
+            <hr/>
 
+        <h1>Pesan</h1>
+
+        <section class="form-result-container" id="message">
+        <form class="form-container">
             <div>
-                Result: <span id="result"></span>
+                <label for="name">Name</label>
+                <input id="name" type="text" required>
             </div>
-
-                    <button type="button" onclick="nextSlide(1)">Next Slide</button>
-
+        
+            <div>
+                <label for="tanggallahir">Tanggal Lahir</label>
+                <input id="tanggallahir" type="date" required>
+            </div>
+        
+            <div>
+                <label for="jeniskelamin">Jenis Kelamin</label>
+                <input type="radio" id="laki" name="jeniskelamin" value="Laki-laki">
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jeniskelamin" value="Perempuan">
+                <label for="perempuan">Perempuan</label>
+            </div>
+        
+            <div>
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" rows="4" required></textarea>
+            </div>
+        
+            <button type="button" onclick="formValidation()">Submit</button>
+        </form>
+        
+        <!-- Container untuk menampung semua result -->
+        <div class="result-container">
+            <div class="result-header">Results:</div>
+            <div id="result-container"></div>
+        </div>
 
         </section>
     </main>
-    
+
     <footer>
         <p>Made by Fahmi</p>
     </footer>
 
-<script src="js\script.js"></script>
+    <script src="js\script.js"></script>
 
 </body>
+
 </html>
